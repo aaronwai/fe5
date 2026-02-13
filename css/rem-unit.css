@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: coral;
+  border: 1px solid black;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 7vw;
+  padding: 0.3rem 0;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+ul {
+  font-size: 1.5em;
+}

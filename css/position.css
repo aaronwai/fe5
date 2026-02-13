@@ -1,0 +1,55 @@
+.container {
+  background-color: yellow;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: rgba(14, 115, 215, 0.46);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 30px 2px #d92d2d78;
+  /* x-offset y-offset blur spread color */
+}
+
+.box-1 {
+  position: static;
+  left: 30px; /* This will not have any effect since position is static */
+}
+
+.box-2 {
+  position: relative; /* static base but move */
+  left: 30px; /* This will move the box 30px to the right from its normal position */
+  top: 20px;
+}
+
+.box-3 {
+  position: fixed; /* out of current dimensions */
+  /* position based on broswer viewport */
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.box-4 {
+  /* relative + fixed */
+  position: sticky;
+  top: 10px;
+  z-index: -1;
+}
+
+.box-5 {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: coral;
+  z-index: 1;
+}
+/* absolute based on parent and parent need to be relative */
+.box-6 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: -4;
+}

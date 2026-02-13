@@ -1,0 +1,61 @@
+body {
+  font-family: "Noto Sans TC", Times, serif;
+  margin: 0;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  /* background color linear gradient */
+  background: linear-gradient(
+    to bottom right,
+    coral,
+    30%,
+    blue,
+    50%,
+    lightgreen
+  );
+  /* background image */
+  /* background-image: url("./shoes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: url("./texture.png") no-repeat center/cover; */
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: white;
+}
+.hero p {
+  font-size: 18px;
+  color: #fff;
+}
+/* regular link */
+.hero a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* hover */
+.hero a:hover {
+  color: coral;
+}
+
+/* active  */
+.hero a:active {
+  color: blue;
+}
+/* focus */
+.hero a:focus {
+  outline: 2px solid coral;
+}
+
+/* visited */
+.hero a:visited {
+  color: red;
+}

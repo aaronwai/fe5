@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Input form</h1>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="enter your name"
+          minlength="3"
+          maxlength="10"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="enter your email"
+          readonly
+          value="abc@abc.com"
+        />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <br />
+      <div>
+        <label for="product">Product</label>
+        <select name="product" id="product" multiple size="4">
+          <option value="iphone">iphone</option>
+          <option value="imac" selected>imac</option>
+          <option value="ipad">ipad</option>
+          <option value="macbook">macbook</option>
+        </select>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your message here"
+          rows="4"
+          cols="40"
+          style="resize: none"
+        ></textarea>
+        <br />
+        <label for="html">
+          <input type="checkbox" id="html" name="languages" value="html" /> HTML
+        </label>
+        <label for="javascript">
+          <input
+            type="checkbox"
+            id="javascript"
+            name="languages"
+            value="javascript"
+            checked
+          />
+          JavaScript
+        </label>
+        <label for="css">
+          <input
+            type="checkbox"
+            id="css"
+            name="languages"
+            value="css"
+            disabled
+          />
+          CSS
+        </label>
+        <br />
+        <label for="small">
+          <input type="radio" id="small" name="size" value="small" /> Small
+        </label>
+
+        <label for="medium">
+          <input type="radio" id="medium" name="size" value="medium" /> Medium
+        </label>
+        <label for="large">
+          <input type="radio" id="large" name="size" value="large" /> Large
+        </label>
+        <br />
+        <div>
+          <label for="color">Color</label>
+          <input type="color" id="color" name="color" />
+        </div>
+        <div>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div>
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" />
+        </div>
+        <div>
+          <label for="week">Week</label>
+          <input type="week" id="week" name="week" />
+        </div>
+        <div>
+          <label for="month">Month</label>
+          <input type="month" id="month" name="month" />
+        </div>
+        <div>
+          <label for="url">URL</label>
+          <input type="url" id="url" name="url" />
+        </div>
+        <div>
+          <label for="range">range</label>
+          <input
+            type="range"
+            id="range"
+            name="range"
+            min="0"
+            max="100"
+            step="5"
+            value="100"
+            style="width: 300px"
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

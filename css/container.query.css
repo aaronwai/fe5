@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  display: flex;
+}
+p {
+  padding: 2rem;
+}
+main {
+  container-type: inline-size; /* container-type : inline-size (width) */
+  /* container-type : block-size (height) */
+  container-name: main;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f4f4;
+}
+main p {
+  background: lightgreen;
+}
+aside {
+  container-type: inline-size;
+  container-name: aside;
+  flex: 0 0 30%;
+  background: #f4f4f4;
+  padding: 20px;
+}
+@container main (max-width:992px) {
+  main p {
+    background: lightblue;
+  }
+}
+@container aside (max-width : 300px) {
+  aside p {
+    background: lightcoral;
+  }
+}

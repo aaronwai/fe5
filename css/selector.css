@@ -1,0 +1,82 @@
+/* universal selector */
+* {
+  word-spacing: 3px;
+}
+/* element selector */
+h2 {
+  color: #55eb14;
+}
+/* id selector */
+#heading {
+  color: blue;
+}
+#unique-box {
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* class's direct element */
+.box > h2 {
+  color: red;
+}
+/* element's direct child */
+span > h2 {
+  color: yellow;
+}
+/* class direct class */
+.box > .child {
+  color: peru;
+}
+.simple {
+  color: lime;
+}
+
+.box {
+  background-color: #c28465f1;
+}
+/* multiple class within element */
+.inner-box.first-box {
+  color: pink;
+}
+
+/* descenting  class  child grandchild */
+.box .inner-box {
+  background-color: green;
+}
+
+/* dwscent element child, grandchild */
+div h2 {
+  font-size: 20px;
+}
+/* adjacent sibling */
+.first + li + li {
+  background-color: green;
+}
+/* general slibling */
+
+.first ~ li {
+  color: red;
+}
+/* n-child */
+ul li:nth-child(2n + 1) {
+  font-size: 30px;
+}
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 15px;
+}
+
+/* pseudo element */
+p::first-line {
+  font-weight: bold;
+}
+/* pseudo-class */
+.pseudo-class:hover {
+  color: #ff5733;
+  text-decoration: underline;
+}
+/* muliple selectors */
+h4,
+h5 {
+  font-size: 26px;
+}

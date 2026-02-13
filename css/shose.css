@@ -1,0 +1,90 @@
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 2;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 3px solid red; */
+}
+.sporty {
+  color: red;
+}
+.casual {
+  color: blue;
+}
+
+.formal {
+  color: brown;
+}
+
+main {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #d5e3e6;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: left;
+}
+
+.card {
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  color: purple;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+.sporty + p {
+  color: red;
+}
+
+.card.card-sporty {
+  background: #fff url(./sporty_shoe.png) no-repeat center right/200px;
+}
+.card-casual {
+  background: #fff url(./casual_shoe_no_bg.png) no-repeat center right/200px;
+}
+.card-formal {
+  background: #fff url(./formal_shoe_no_bg.png) no-repeat center right/200px;
+  margin-bottom: 0;
+}
+
+button {
+  width: 150px;
+  font-size: 16px;
+  padding: 7px 0;
+  margin: 15px 0;
+  color: white;
+}
+.card-sporty button {
+  background-color: red;
+}
+.card-casual button {
+  background-color: blue;
+}
+.card-formal button {
+  background-color: brown;
+}
+
+button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

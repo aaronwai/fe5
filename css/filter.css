@@ -1,0 +1,23 @@
+.container {
+  max-width: 900px;
+  margin: 70px auto;
+}
+h1 {
+  background: #333;
+}
+img {
+  max-width: 100%;
+  /* filter: grayscale(100%); */
+  /* filter: blur(5px); */
+  /* filter: brightness(200%); */
+  /* filter: contrast(50%); */
+  /* filter: drop-shadow(10px 10px 5px red); */
+  /* filter: hue-rotate(180deg); */
+  /* filter: invert(100%); */
+  /* filter: opacity(50%); */
+  /* filter: saturate(200%); */
+  /* filter: sepia(100%); */
+  filter: grayscale(100%) blur(5px) sepia(50%);
+  /* reset filter */
+  filter: none;
+}

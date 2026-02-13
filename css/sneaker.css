@@ -1,0 +1,35 @@
+body {
+  font-family: "Noto Sans TC", "Arial Narrow", Arial, sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+h1 {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 36px;
+  padding: 5px;
+}
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  color: purple;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 2;
+}

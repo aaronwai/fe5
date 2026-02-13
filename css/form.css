@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #f1f1f1;
+}
+
+.container {
+  width: 400px;
+  margin: 150px auto;
+}
+.card {
+  background: #373f4d;
+  color: #ddd5d5;
+  border-radius: 5px;
+  padding: 60px 40px;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.card p {
+  margin: 15px 0;
+  font-weight: 100;
+}
+.card .form-group {
+  margin: 30px 0px 15px;
+}
+.card input {
+  padding: 14px 0px;
+  width: 300px;
+}
+.card input[type="text"] {
+  font-size: 18px;
+}
+.card input[type="password"] {
+  font-size: 45px;
+}
+.card button {
+  width: 300px;
+  padding: 14px 0px;
+  background: linear-gradient(to right, rgb(238, 155, 11), rgb(238, 113, 11));
+  color: #fff;
+  font-size: 18px;
+}
+
+.card button:hover {
+  background: linear-gradient(to right, rgb(238, 113, 11), rgb(238, 155, 11));
+  cursor: pointer;
+}
