@@ -1,0 +1,32 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #f4f4f4;
+}
+
+.item {
+  background-color: coral;
+  padding: 1rem;
+  border: 1px solid #333;
+  text-align: center;
+}
+.item-grid {
+  display: grid;
+  /* case 1 : by percentage 70% 30 % */
+  /* case 2 : multiple column ratios : 33.3% 33.3% 33.3% */
+  /* case 3 : by fr : 2fr 1fr 3fr*/
+  /* case 4 : fixed width with ratio : 600px 1fr 1fr */
+  /* case 5 apply minmax() to set min and max width */
+  /* case 6 : apply repeat() */
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+
+  /* case 1 : all sides : gap: 20px; */
+  /* case 2 : grid-row-gap (row only) : 20px; */
+  /* case 3 : grid-column-gap (column only) : 20px; */
+  /* case 4 : grid-gap (row and column) : 20px 10px; */
+  grid-gap: 20px 10px;
+}
