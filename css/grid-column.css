@@ -22,11 +22,18 @@ body {
   /* case 4 : fixed width with ratio : 600px 1fr 1fr */
   /* case 5 apply minmax() to set min and max width */
   /* case 6 : apply repeat() */
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-
+  /* grid-template-columns: repeat(3, minmax(300px, 1fr)); */
+  /* define rows : (first row )1fr (second row) 2fr */
+  grid-template-rows: 1fr 2fr 3fr 4fr;
+  /* auto-rows : the rest of the rows */
+  /* grid-auto-rows: 300px; */
   /* case 1 : all sides : gap: 20px; */
   /* case 2 : grid-row-gap (row only) : 20px; */
   /* case 3 : grid-column-gap (column only) : 20px; */
   /* case 4 : grid-gap (row and column) : 20px 10px; */
   grid-gap: 20px 10px;
+  /* autofill */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  /* autofit */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }

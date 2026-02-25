@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./shopping-list.css" />
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="./logo.svg" alt="" />
+        </div>
+        <h1>Shopping List</h1>
+      </header>
+      <form id="item-form">
+        <div class="form-control">
+          <input
+            type="text"
+            id="item-input"
+            class="form-input"
+            name="item"
+            placeholder="Enter Item"
+          />
+        </div>
+        <div class="form-control">
+          <button class="btn" type="submit">
+            <i class="fa-solid fa-plus"></i>Add Item
+          </button>
+        </div>
+      </form>
+      <div class="filter">
+        <input
+          type="text"
+          class="form-input-filter"
+          id="filter"
+          placeholder="Filter Items"
+        />
+        <ul id="item-list" class="items">
+          <li>
+            Apple
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li>
+            mango
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li>
+            orange
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li>
+            banana
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+        </ul>
+        <button id="clear" class="btn-clear">Clear all</button>
+      </div>
+    </div>
+    <script src="./shopping-list.js"></script>
+  </body>
+</html>
