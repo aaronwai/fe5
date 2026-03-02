@@ -19,7 +19,9 @@
         <div class="logo">
           <img src="./logo.svg" alt="" />
         </div>
-        <h1>Shopping List</h1>
+        <h1 id="app-title">Shopping List</h1>
+        <!-- <a href="http://google.com">google</a>
+        <a href="http://facebook.com">facebook</a> -->
       </header>
       <form id="item-form">
         <div class="form-control">
@@ -44,26 +46,27 @@
           id="filter"
           placeholder="Filter Items"
         />
-        <ul id="item-list" class="items">
-          <li>
+        <ul id="item-list" class="items parent">
+          <!-- this is a comment for nodelist -->
+          <li class="item">
             Apple
             <button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
-          <li>
+          <li class="item">
             mango
             <button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
-          <li>
+          <li class="item">
             orange
             <button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
-          <li>
+          <li class="item">
             banana
             <button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
@@ -73,6 +76,6 @@
         <button id="clear" class="btn-clear">Clear all</button>
       </div>
     </div>
-    <script src="./shopping-list.js"></script>
+    <script src="./8. insert-element.js"></script>
   </body>
 </html>
