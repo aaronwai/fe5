@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+}
+.card {
+  background: #f4f4f4;
+  border: 1px #ccc solid;
+  padding: 15px;
+}
+.dark {
+  background: #333;
+  color: #fff;
+}
