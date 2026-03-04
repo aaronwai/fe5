@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --clr-primary-1: #edf8f0;
+  --clr-primary-2: #dbf0e2;
+  --clr-primary-3: #b6e2c5;
+  --clr-primary-4: #92d3a8;
+  --clr-primary-5: #6dc58a;
+  --clr-primary-6: #49b66d;
+  --clr-primary-7: #3a9257;
+  --clr-primary-8: #2c6d42;
+  --clr-primary-9: #1d492c;
+  --clr-primary-10: #0f2416;
+
+  --clr-grey-1: #6dc58ad9;
+  --clr-grey-2: #6dc58ade;
+  --clr-grey-3: #6dc58ac2;
+  --clr-grey-4: #6dc58a8f;
+  --clr-grey-5: #6dc58a7d;
+  --clr-grey-6: #6dc58a53;
+  --clr-grey-7: #6dc58a47;
+  --clr-grey-8: #6dc58a36;
+  --clr-grey-9: #6dc58a33;
+  --clr-grey-10: #6dc58a10;
+
+  --clr-white: #fff;
+  --clr-black: #222;
+
+  --ff-primary: "Roboto", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
