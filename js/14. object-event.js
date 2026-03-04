@@ -21,3 +21,8 @@ document.querySelector("a").addEventListener("click", (e) => {
   e.preventDefault();
   console.log("link is clicked");
 });
+
+function onDrag(e) {
+  document.querySelector("h1").textContent = `x: ${e.clientX}, y: ${e.clientY}`;
+}
+logo.addEventListener("drag", onDrag);
