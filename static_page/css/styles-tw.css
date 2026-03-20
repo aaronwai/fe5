@@ -103,11 +103,11 @@ p {
 
 /* section : navbar */
 /* TODO :  mobile menu + media query */
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-}
+} */
 
 .navbar {
   background: var(--clr-primary-3);
@@ -121,24 +121,24 @@ p {
   /* overflow: hidden; */
 }
 
-.navbar .logo {
+/* .navbar .logo {
   width: 4rem;
-}
+} */
 
-.navbar-flex {
+/* .navbar-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .navbar .main-menu {
   display: none;
 }
-.navbar .main-menu-list,
+/* .navbar .main-menu-list,
 .navbar .main-menu-icons {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-}
+} */
 .navbar li {
   font-size: 1.5rem;
 }

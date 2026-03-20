@@ -10,68 +10,68 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-tw.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <title>Tour</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container navbar-flex">
+    <nav class="bg-white shadow-md">
+      <div class="container px-4 py-3 flex items-center justify-between">
         <a href="./index.html" class="logo">
-        <img src="./assets/logo.png" alt="" /></a>
-        <div class="main-menu">
-          <ul class="main-menu-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#tours">Tours</a></li>
+          <img src="./assets/logo.png" alt="" class="h-10 w-auto"
+        /></a>
+        <div class="main-menu hidden md:flex items-center gap-8">
+          <ul class="main-menu-list flex gap-6">
+            <li><a href="#home" class="text-gray-800 hover:text-blue-600 transition-colors">Home</a></li>
+            <li><a href="#about" class="text-gray-800 hover:text-blue-600 transition-colors">About</a></li>
+            <li><a href="#services" class="text-gray-800 hover:text-blue-600 transition-colors">Services</a></li>
+            <li><a href="#tours" class="text-gray-800 hover:text-blue-600 transition-colors">Tours</a></li>
           </ul>
-         
-            <ul class="main-menu-icons">
-              <li>
-                <a
-                  href="http://www.facebook.com"
-                  target="_blank"
-                  class="nav-icon"
-                >
-                  <i class="fa-brands fa-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="http://www.instagram.com"
-                  target="_blank"
-                  class="nav-icon"
-                >
-                  <i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="http://www.twitter.com"
-                  target="_blank"
-                  class="nav-icon"
-                >
-                  <i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-            </ul>
+
+          <ul class="main-menu-icons flex gap-4 ml-8">
+            <li>
+              <a
+                href="http://www.facebook.com"
+                target="_blank"
+                class="nav-icon text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://www.instagram.com"
+                target="_blank"
+                class="nav-icon text-gray-600 hover:text-blue-600 transition-colors"
+
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" class="nav-icon text-gray-600 hover:text-blue-600 transition-colors">
+                <i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu md:hidden">
+          <div class="mobile-menu-toggle text-gray-800 hover:text-blue-600 cursor-pointer">
+            <i class="fa-solid fa-bars text-xl"></i>
           </div>
-       
-        <div class="mobile-menu">
-          <div class="mobile-menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="mobile-menu-items">
+          <div class="mobile-menu-items hidden absolute top-16 left-0 right-0 bg-white shadow-lg">
             <ul class="mobile-menu-list">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#tours">Tours</a></li>
+              <li><a href="#home" class="text-gray-800 hover:text-blue-600 transition-colors">Home</a></li>
+              <li><a href="#about" class="text-gray-800 hover:text-blue-600 transition-colors">About</a></li>
+              <li><a href="#services" class="text-gray-800 hover:text-blue-600 transition-colors">Services</a></li>
+              <li><a href="#tours" class="text-gray-800 hover:text-blue-600 transition-colors">Tours</a></li>
             </ul>
           </div>
         </div>
-      </div> </div>
+      </div>
     </nav>
     <section class="hero" id="home">
       <div class="hero container">
@@ -87,7 +87,7 @@
       <h2>about <span>us</span></h2>
       <div class="about-center">
         <div class="about-img">
-          <img src="../assets/beach.png" alt=""/>
+          <img src="../assets/beach.png" alt="" />
         </div>
         <article class="about-info">
           <h3>expore the difference</h3>
@@ -96,11 +96,10 @@
           <a href="#" class="btn">read more</a>
         </article>
       </div>
-
     </section>
     <section class="section services" id="services">
-       <h2>our <span>services</span></h2>
-       <div class="service-center">
+      <h2>our <span>services</span></h2>
+      <div class="service-center">
         <!-- first icon -->
         <article class="service">
           <span class="service-icon">
@@ -114,7 +113,7 @@
           </div>
         </article>
         <!-- second icon -->
-         <article class="service">
+        <article class="service">
           <span class="service-icon">
             <i class="fa-solid fa-tree"></i>
           </span>
@@ -126,7 +125,7 @@
           </div>
         </article>
         <!-- third icon -->
-         <article class="service">
+        <article class="service">
           <span class="service-icon">
             <i class="fa-solid fa-socks"></i>
           </span>
@@ -137,15 +136,15 @@
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </article>
-       </div>
+      </div>
     </section>
     <section class="section tours" id="tours">
-       <h2>featured <span>tours</span></h2>
-       <div class="tour-center">
+      <h2>featured <span>tours</span></h2>
+      <div class="tour-center">
         <!-- first card -->
         <div class="tour-card">
           <div class="tour-img-container">
-            <img src="./assets/world-1.png" alt=""/>
+            <img src="./assets/world-1.png" alt="" />
             <p class="tour-date">Aug 26th, 2026</p>
           </div>
           <div class="tour-info">
@@ -154,36 +153,43 @@
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
             <div class="tour-footer">
-              <p><span><i class="fa-solid fa-map"></i></span> China</p>
+              <p>
+                <span><i class="fa-solid fa-map"></i></span> China
+              </p>
               <p>6 days</p>
               <p>from $2100</p>
-
             </div>
           </div>
         </div>
 
         <!-- seconf card -->
-         <div class="tour-card">
+        <div class="tour-card">
           <div class="tour-img-container">
-            <img src="./assets/world-2.png" alt=""/>
+            <img src="./assets/world-2.png" alt="" />
             <p class="tour-date">Aug 26th, 2026</p>
           </div>
           <div class="tour-info">
             <div class="tour-title">
               <h4>tibet adventure</h4>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laboriosam saepe quibusdam aliquid inventore numquam qui vitae aperiam ex nemo!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, laboriosam saepe quibusdam aliquid inventore numquam
+              qui vitae aperiam ex nemo!
+            </p>
             <div class="tour-footer">
-              <p><span><i class="fa-solid fa-map"></i></span> China</p>
+              <p>
+                <span><i class="fa-solid fa-map"></i></span> China
+              </p>
               <p>6 days</p>
               <p>from $2100</p>
             </div>
           </div>
         </div>
         <!-- third card -->
-         <div class="tour-card">
+        <div class="tour-card">
           <div class="tour-img-container">
-            <img src="./assets/world-3.png" alt=""/>
+            <img src="./assets/world-3.png" alt="" />
             <p class="tour-date">Aug 26th, 2026</p>
           </div>
           <div class="tour-info">
@@ -192,17 +198,18 @@
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
             <div class="tour-footer">
-              <p><span><i class="fa-solid fa-map"></i></span> China</p>
+              <p>
+                <span><i class="fa-solid fa-map"></i></span> China
+              </p>
               <p>6 days</p>
               <p>from $2100</p>
-
             </div>
           </div>
         </div>
         <!-- forth card -->
-         <div class="tour-card">
+        <div class="tour-card">
           <div class="tour-img-container">
-            <img src="./assets/world-4.png" alt=""/>
+            <img src="./assets/world-4.png" alt="" />
             <p class="tour-date">Aug 26th, 2026</p>
           </div>
           <div class="tour-info">
@@ -211,14 +218,15 @@
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
             <div class="tour-footer">
-              <p><span><i class="fa-solid fa-map"></i></span> China</p>
+              <p>
+                <span><i class="fa-solid fa-map"></i></span> China
+              </p>
               <p>6 days</p>
               <p>from $2100</p>
-
             </div>
           </div>
         </div>
-       </div>
+      </div>
     </section>
     <footer class="section footer">
       <ul class="footer-menu-list">
